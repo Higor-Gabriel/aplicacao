@@ -1,6 +1,7 @@
 from django.contrib.messages import constants as messages
-import os.path
+import os.path, sys
 from pathlib import Path
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,6 +22,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
     'usuarios',
     'receitas',
     'django.contrib.admin',
@@ -117,7 +119,7 @@ STATICFILES_DIRS = [
 ]
 #Media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/medi/'
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
